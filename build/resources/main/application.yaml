@@ -1,0 +1,8 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - com.onlineStoreMobile.SerializationKt.configureSerialization
+      - com.onlineStoreMobile.PostgresKt.configurePostgres
+      - com.onlineStoreMobile.RoutingKt.configureRouting
